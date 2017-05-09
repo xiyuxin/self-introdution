@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+	    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<title>resume</title>
+		<style>
+		   .lef{
+		     float:left;
+			 background-color:#99CCFF;
+			 width:25%;
+			 height:1500px;
+			  border:3px solid gold;
+			 padding:100em,100em,100em,100em;
+		   }
+		   .cen{
+		     float:right;
+			 width:74%;
+			 height:1500px;
+			 border:3px solid #00CCFF;
+			 background-color:#FFFFFF;
+		   }
+		   #img{
+		   text-align:right;
+		   }
+		   
+		</style>
+	</head>
+	<body background="media/bg.jpg">
+	        <header align="center">
+			    <canvas id ="myCanvas" width="800" height="80" >您的浏览器不支持</canvas>
+				<script>
+				  var canvas=document.getElementById("myCanvas");
+				  var ctx=canvas.getContext("2d");
+				  ctx.font="italic small-caps bold 50px Arial";
+				  var gradient=ctx.createLinearGradient(0,0,canvas.width,0);
+				  gradient.addColorStop("0","red");
+				  gradient.addColorStop("0.5","yellow");
+				  gradient.addColorStop("1","green");
+			   	  ctx.fillStyle=gradient;
+				  ctx.fillText("Personal Resume",10,50);
+				</script>
+	
+			</header>
+			
+		    <div class="lef"  align="center" >
+			    <header id="self">
+				   <canvas id ="myself" width="800" height="80" >您的浏览器不支持</canvas>
+				<script>
+				  var c=document.getElementById("myself");
+				  var cxt=c.getContext("2d");
+				  cxt.font="italic small-caps bold 35px Arial";
+				  var gradients=cxt.createLinearGradient(0,0,c.width,0);
+				  gradients.addColorStop("0","yellow");
+				  gradients.addColorStop("0.5","red");
+				  gradients.addColorStop("1","green");
+			   	  cxt.fillStyle=gradients;
+				  cxt.fillText("About Me",70,60);
+				  </script>
+				</header>
+			    <img src="media/kk3.jpg"  alt="丑女无敌"  width="200" height="300"/>
+				<br/>
+				<p style="color:#333333">求职意向：前端开发工程师</p><br/><br/>
+				<p> &nbsp;&nbsp;18届毕业生，目前想应聘一家实习单位。在校三年期间，</p>
+			</div>
+		    <div class="cen">
+			   
+			</div>
+			<footer>
+			   <video src="media/song.mp3" loop autoplay  controls></video>
+			</footer>
+	</body>
+
+</html>
